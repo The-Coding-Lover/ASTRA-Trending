@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astra Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header>
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712074.png" class="avatar" alt="Astra Avatar" />
+      <h1>Astra</h1>
+    </header>
+
+    <!-- Daily Card -->
+    <div class="daily-card" id="dailyCard">
+      <div class="icon" id="dailyIcon">💡</div>
+      <div class="text" id="dailyText">Loading your Daily Byte...</div>
+      <div class="meta" id="dailyMeta"></div>
+      <div class="actions">
+        <button class="btn btn-save" id="btnSave">❤️ Save</button>
+        <button class="btn btn-share" id="btnShare">🔗 Share</button>
+      </div>
+    </div>
+
+    <!-- Chat messages -->
+    <main id="chatbox" class="chatbox">
+      <!-- Messages appear here -->
+    </main>
+
+    <!-- Input controls + history toggle -->
+    <div class="input-container">
+      <input type="text" id="userInput" placeholder="Ask anything..." />
+      <button id="sendBtn">➤</button>
+      <button id="voiceBtn">🎙️</button>
+      <button id="historyToggle" title="Show/Hide Daily History">📜</button>
+    </div>
+
+    <!-- History View (hidden by default) -->
+    <div class="history-view hidden" id="historyView">
+      <h3>Your Daily Bytes History</h3>
+      <ul class="history-list" id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
